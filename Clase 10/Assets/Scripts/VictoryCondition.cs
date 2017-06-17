@@ -7,11 +7,18 @@ public class VictoryCondition : MonoBehaviour {
 
 	public float maxCorrectRotation;
 	public float minCorrectRotation;
+	private float rotationZ;
 
 	void OnCollisionEnter2D(Collision2D col){
 		
-		if (transform.rotation.eulerAngles.z > maxCorrectRotation) {
-			Debug.Log(transform.rotation.z);
+		rotationZ = transform.eulerAngles.z;
+
+		Debug.Log (rotationZ);
+		if (rotationZ > 4.5 && rotationZ < 356) {
+			Debug.Log ("Perdiste");
 		}
+	}
+	void OnCollisionExit2D(Collision2D col2){
+		rotationZ = 0f;
 	}
 }
