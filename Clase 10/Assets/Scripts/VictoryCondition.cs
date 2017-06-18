@@ -14,10 +14,11 @@ public class VictoryCondition : MonoBehaviour {
 		rotationZ = transform.eulerAngles.z;
 
 		Debug.Log (rotationZ);
-		if (rotationZ > 4.5 && rotationZ < 356) {
+		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
 			Debug.Log ("Perdiste");
 		}
 	}
+
 	void OnCollisionExit2D(Collision2D col2){
 		rotationZ = 0f;
 	}
