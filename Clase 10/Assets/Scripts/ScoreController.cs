@@ -7,18 +7,18 @@ public class ScoreController : MonoBehaviour {
 
 	private int score = 0;
 	private float rotationZ;
-	private VictoryCondition useOfMinAndMax;
-	private Transform hud;
+	private Life useOfMinAndMax;
+	private Canvas hud;
 	private Transform transformOfText;
 	private Text scoreText;
 
 	void Awake (){
-		useOfMinAndMax = GetComponent<VictoryCondition> ();
+		useOfMinAndMax = GetComponent<Life> ();
+		hud = transform.GetComponentInChildren<Canvas> ();
 	}
 
 	void Start (){
-		hud = transform.Find ("Canvas");
-		transformOfText = hud.Find ("Score");
+		transformOfText = hud.transform.Find ("Score");
 		scoreText = transformOfText.GetComponent<Text> ();
 	}
 
