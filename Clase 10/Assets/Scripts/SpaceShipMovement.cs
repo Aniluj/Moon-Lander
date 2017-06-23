@@ -28,16 +28,10 @@ public class SpaceShipMovement : MonoBehaviour {
 	void Update () {
 		horizontalAxis = Input.GetAxisRaw ("Horizontal");
 		verticalAxis = Input.GetAxis ("Vertical");
-		if (verticalAxis > 0) {
-			totalVelocity = spaceShip.velocity.magnitude * 40f;
-		} else {
-			totalVelocity -= spaceShip.velocity.magnitude * 40f;
-		}
+
+		totalVelocity = spaceShip.velocity.magnitude * 40f;
 		velocityText.text ="Velocity: "+(int)totalVelocity;
-		if (totalVelocity <= 0f) {
-			velocityText.text = "Velocity: " + 0;
 		}
-	}
 
 	void FixedUpdate (){
 		spaceShip.AddTorque (velocityOfRotation * horizontalAxis, ForceMode2D.Force);
