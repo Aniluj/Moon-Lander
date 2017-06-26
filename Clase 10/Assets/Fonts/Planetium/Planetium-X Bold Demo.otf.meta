@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 7ae3e2ae68203694cad3ce71a4bc5543
+timeCreated: 1498375211
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Planetium-X Bold Demo
+  fontNames:
+  - Planetium-X Bold Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

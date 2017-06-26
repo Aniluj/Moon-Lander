@@ -17,11 +17,9 @@ public class AudioOnOff : MonoBehaviour {
 
 	public int OnOff (ref int state) {
 		if (state == 1) {
-			Debug.Log ("Entró, perro");
 			state = 0;
 			AudioListener.pause = false;
 		}else if (state == 0){
-			Debug.Log ("Entró, wachín");
 			state = 1;
 			AudioListener.pause = true;
 		}

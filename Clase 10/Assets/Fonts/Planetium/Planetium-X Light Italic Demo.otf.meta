@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: a6bee4be13b7eb247a8f723c7d4ef086
+timeCreated: 1498375397
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Planetium-X Light Italic Demo
+  fontNames:
+  - Planetium-X Light Italic Demo
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
