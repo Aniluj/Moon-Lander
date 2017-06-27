@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -11,6 +9,7 @@ public class Life : MonoBehaviour {
 	public Transform startingPosition;
 	public int life;
 	public GameObject defeatPanel;
+	private FuelController fuel;
 	private Renderer spaceshipRenderer;
 	private SpaceShipMovement movement;
 	private float rotationZ;
@@ -19,6 +18,7 @@ public class Life : MonoBehaviour {
 	private Text lifeText;
 
 	void Awake (){
+		fuel = GetComponent<FuelController> ();
 		movement = GetComponent<SpaceShipMovement> ();
 		spaceshipRenderer = GetComponent<Renderer> ();
 		hud = transform.GetComponentInChildren<Canvas> ();
@@ -34,7 +34,7 @@ public class Life : MonoBehaviour {
 
 		lifeText.text = "Life: " + life;
 
-		if (life == 0) {
+		if (life == 0 || fuel.fuel.value <= 0) {
 			spaceshipRenderer.enabled = false;
 			movement.enabled = false;
 			transform.position = startingPosition.position;

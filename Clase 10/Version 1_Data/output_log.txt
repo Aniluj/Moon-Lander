@@ -19,43 +19,25 @@ Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de
 Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
 Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
 Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
-- Completed reload, in  0.119 seconds
+- Completed reload, in  0.141 seconds
 Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\System.dll (this message is harmless)
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.828861 ms
+UnloadTime: 2.465956 ms
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 15.108634 ms
+UnloadTime: 8.239732 ms
 
-Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 4.720326 ms (FindLiveObjects: 0.091046 ms CreateObjectMapping: 0.037829 ms MarkObjects: 0.439845 ms  DeleteObjects: 4.150322 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.910467 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 0.528968 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.036546 ms MarkObjects: 0.400734 ms  DeleteObjects: 0.008976 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.939320 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 0.570004 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.036546 ms MarkObjects: 0.441769 ms  DeleteObjects: 0.009617 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.979714 ms
-
-Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
-Total: 0.543715 ms (FindLiveObjects: 0.072452 ms CreateObjectMapping: 0.037188 ms MarkObjects: 0.418045 ms  DeleteObjects: 0.009617 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 451.
+Total: 7.653057 ms (FindLiveObjects: 0.100664 ms CreateObjectMapping: 0.041035 ms MarkObjects: 0.633480 ms  DeleteObjects: 6.875313 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.125902 ms
+UnloadTime: 1.705523 ms
 
-Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 354.
-Total: 2.762820 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.037829 ms MarkObjects: 0.545639 ms  DeleteObjects: 2.096640 ms)
+Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 355.
+Total: 3.370653 ms (FindLiveObjects: 0.103870 ms CreateObjectMapping: 0.044241 ms MarkObjects: 0.653356 ms  DeleteObjects: 2.565980 ms)
 
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: 23d8 -> priority: 1 
+  Thread -> id: 24c0 -> priority: 1 

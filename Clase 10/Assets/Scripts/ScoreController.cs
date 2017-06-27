@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +7,7 @@ public class ScoreController : MonoBehaviour {
 	public GameObject victoryPanel;
 	public int scoreOfVictory;
 	public Transform startingPoint;
+	private FuelController fuel;
 	private SpaceShipMovement movement;
 	private int score = 0;
 	private float rotationZ;
@@ -18,6 +17,7 @@ public class ScoreController : MonoBehaviour {
 	private Text scoreText;
 
 	void Awake (){
+		fuel = GetComponent<FuelController> ();
 		movement = GetComponent<SpaceShipMovement> ();
 		useOfMinAndMax = GetComponent<Life> ();
 		hud = transform.GetComponentInChildren<Canvas> ();
@@ -47,6 +47,7 @@ public class ScoreController : MonoBehaviour {
 
 		if (col.gameObject.CompareTag ("PointOfLanding") && (rotationZ < useOfMinAndMax.maxCorrectRotation || rotationZ > useOfMinAndMax.minCorrectRotation)) {
 			score += col.gameObject.GetComponent<ValueOfLanding> ().value;
+			fuel.fuel.value += col.gameObject.GetComponent<ValueOfLanding> ().rechargeOfFuel;
 		}
 	}
 }
