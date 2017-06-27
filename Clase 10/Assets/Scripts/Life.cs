@@ -9,13 +9,18 @@ public class Life : MonoBehaviour {
 	public float maxCorrectRotation;
 	public float minCorrectRotation;
 	public Transform startingPosition;
+	public int life;
+	public GameObject defeatPanel;
+	private Renderer spaceshipRenderer;
+	private SpaceShipMovement movement;
 	private float rotationZ;
-	private int life;
 	private Canvas hud;
 	private Transform transformOfLifeText;
 	private Text lifeText;
 
 	void Awake (){
+		movement = GetComponent<SpaceShipMovement> ();
+		spaceshipRenderer = GetComponent<Renderer> ();
 		hud = transform.GetComponentInChildren<Canvas> ();
 	}
 
@@ -30,7 +35,13 @@ public class Life : MonoBehaviour {
 		lifeText.text = "Life: " + life;
 
 		if (life == 0) {
-			SceneManager.LoadScene ("Moon Lander");	
+			spaceshipRenderer.enabled = false;
+			movement.enabled = false;
+			transform.position = startingPosition.position;
+			defeatPanel.SetActive (true);
+			if (Input.GetButton ("Restart")) {
+				SceneManager.LoadScene ("Moon Lander");
+			}	
 		}
 	}
 
@@ -47,7 +58,33 @@ public class Life : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionExit2D(Collision2D col2){
+	void OnCollisionStay2D(Collision2D col2){
+
+		rotationZ = transform.eulerAngles.z;
+
+		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
+			life--;
+			gameObject.SetActive (false);
+			transform.rotation = startingPosition.rotation;
+			transform.position = startingPosition.position;
+			gameObject.SetActive (true);
+		}
+	}
+
+	void OnCollisionExit2D(Collision2D col3){
 		rotationZ = 0f;
+	}
+
+	void OnTriggerEnter2D(Collider2D colli1){
+
+		rotationZ = transform.eulerAngles.z;
+
+		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
+			life--;
+			gameObject.SetActive (false);
+			transform.rotation = startingPosition.rotation;
+			transform.position = startingPosition.position;
+			gameObject.SetActive (true);
+		}
 	}
 }

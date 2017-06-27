@@ -1,0 +1,61 @@
+Initialize engine version: 5.5.2f1 (3829d7f588f3)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 1060 6GB (ID=0x1c03)
+    Vendor:   NVIDIA
+    VRAM:     3072 MB
+    Driver:   21.21.13.7609
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.119 seconds
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Eiji\Desktop\Image Campus\Segundo Año\Desarrollo de Videojuegos - 2\Clase 10\Moon-Lander\Clase 10\Version 1_Data\Managed\System.dll (this message is harmless)
+desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 2.828861 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 15.108634 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 4.720326 ms (FindLiveObjects: 0.091046 ms CreateObjectMapping: 0.037829 ms MarkObjects: 0.439845 ms  DeleteObjects: 4.150322 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.910467 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.528968 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.036546 ms MarkObjects: 0.400734 ms  DeleteObjects: 0.008976 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.939320 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.570004 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.036546 ms MarkObjects: 0.441769 ms  DeleteObjects: 0.009617 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.979714 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 348.
+Total: 0.543715 ms (FindLiveObjects: 0.072452 ms CreateObjectMapping: 0.037188 ms MarkObjects: 0.418045 ms  DeleteObjects: 0.009617 ms)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.125902 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 354.
+Total: 2.762820 ms (FindLiveObjects: 0.080787 ms CreateObjectMapping: 0.037829 ms MarkObjects: 0.545639 ms  DeleteObjects: 2.096640 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 23d8 -> priority: 1 
