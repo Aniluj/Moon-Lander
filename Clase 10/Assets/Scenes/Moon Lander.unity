@@ -2040,6 +2040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38b533f7e04e45645a3ed3e87be05be8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  totalVelocity: 0
   velocityInY: 5
   velocityOfRotation: 0.06
 --- !u!114 &1287101919
@@ -2069,6 +2070,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxCorrectRotation: 4.5
   minCorrectRotation: 356
+  maxVelocity: 30
   startingPosition: {fileID: 1258848434}
   life: 0
   defeatPanel: {fileID: 119295901}
@@ -2090,6 +2092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuel: {fileID: 1382141837}
+  fuelLost: 0.015
 --- !u!1 &1344565128
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,12 +9,13 @@ public class AudioOnOff : MonoBehaviour {
 
 	void Start () {
 		textOfAudioState = GetComponentInChildren<Text> ();
-		onOff = PlayerPrefs.GetInt (audioState, 0);
+		onOff = PlayerPrefs.GetInt (audioState, 1);
 		if (onOff == 1) {
-			textOfAudioState.text = "Audio: Off";
-		} else if (onOff == 0) {
-			
 			textOfAudioState.text = "Audio: On";
+			AudioListener.pause = false;
+		} else if (onOff == 0) {
+			AudioListener.pause = true;
+			textOfAudioState.text = "Audio: Off";
 		}
 	}
 
@@ -25,12 +26,12 @@ public class AudioOnOff : MonoBehaviour {
 	public int OnOff (ref int state) {
 		if (state == 1) {
 			state = 0;
-			AudioListener.pause = false;
-			textOfAudioState.text = "Audio: On";
-		}else if (state == 0){
-			state = 1;
 			AudioListener.pause = true;
 			textOfAudioState.text = "Audio: Off";
+		}else if (state == 0){
+			state = 1;
+			AudioListener.pause = false;
+			textOfAudioState.text = "Audio: On";
 		}
 		return state;
 	}

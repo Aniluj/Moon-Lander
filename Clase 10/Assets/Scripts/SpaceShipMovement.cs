@@ -6,10 +6,10 @@ public class SpaceShipMovement : MonoBehaviour {
 	private Rigidbody2D spaceShip;
 	private float horizontalAxis;
 	private float verticalAxis;
-	private float totalVelocity;
 	private Transform transformOfVelocityText;
 	private Text velocityText;
 	private Canvas hud;
+	public float totalVelocity;
 	public float velocityInY = 0f;
 	public float velocityOfRotation = 0f;
 

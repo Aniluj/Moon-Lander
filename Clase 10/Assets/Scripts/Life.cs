@@ -6,6 +6,7 @@ public class Life : MonoBehaviour {
 
 	public float maxCorrectRotation;
 	public float minCorrectRotation;
+	public float maxVelocity;
 	public Transform startingPosition;
 	public int life;
 	public GameObject defeatPanel;
@@ -35,6 +36,7 @@ public class Life : MonoBehaviour {
 		lifeText.text = "Life: " + life;
 
 		if (life == 0 || fuel.fuel.value <= 0) {
+			fuel.fuel.gameObject.SetActive (false);
 			spaceshipRenderer.enabled = false;
 			movement.enabled = false;
 			transform.position = startingPosition.position;
@@ -49,7 +51,7 @@ public class Life : MonoBehaviour {
 		
 		rotationZ = transform.eulerAngles.z;
 
-		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
+		if ((rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) || movement.totalVelocity >= maxVelocity) {
 			life--;
 			gameObject.SetActive (false);
 			transform.rotation = startingPosition.rotation;
@@ -62,7 +64,7 @@ public class Life : MonoBehaviour {
 
 		rotationZ = transform.eulerAngles.z;
 
-		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
+		if ((rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) || movement.totalVelocity >= maxVelocity) {
 			life--;
 			gameObject.SetActive (false);
 			transform.rotation = startingPosition.rotation;
@@ -79,7 +81,7 @@ public class Life : MonoBehaviour {
 
 		rotationZ = transform.eulerAngles.z;
 
-		if (rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) {
+		if ((rotationZ > maxCorrectRotation && rotationZ < minCorrectRotation) || movement.totalVelocity >= maxVelocity) {
 			life--;
 			gameObject.SetActive (false);
 			transform.rotation = startingPosition.rotation;

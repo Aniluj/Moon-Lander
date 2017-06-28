@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class FuelController : MonoBehaviour {
 
 	public Slider fuel;
+	public float fuelLost;
 
 	void Start () {
 		fuel.value = 10f;
@@ -11,7 +12,7 @@ public class FuelController : MonoBehaviour {
 
 	void Update () {
 		if(Input.GetButton("Vertical")){
-			fuel.value -= 0.015f;
+			fuel.value -= fuelLost;
 		}
 	}
 

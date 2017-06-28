@@ -45,7 +45,7 @@ public class ScoreController : MonoBehaviour {
 	{
 		rotationZ = transform.eulerAngles.z;
 
-		if (col.gameObject.CompareTag ("PointOfLanding") && (rotationZ < useOfMinAndMax.maxCorrectRotation || rotationZ > useOfMinAndMax.minCorrectRotation)) {
+		if (col.gameObject.CompareTag ("PointOfLanding") && (rotationZ < useOfMinAndMax.maxCorrectRotation || rotationZ > useOfMinAndMax.minCorrectRotation) && movement.totalVelocity <= useOfMinAndMax.maxVelocity) {
 			score += col.gameObject.GetComponent<ValueOfLanding> ().value;
 			fuel.fuel.value += col.gameObject.GetComponent<ValueOfLanding> ().rechargeOfFuel;
 		}
